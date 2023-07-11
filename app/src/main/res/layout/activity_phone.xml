@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.PhoneActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:id="@+id/etPhone"
+        android:hint="(+91) Phone Number"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Send SMS Code"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/light_red"
+        android:id="@+id/btnSendSMS" />
+
+    <EditText
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/etVerificationCode"
+        android:hint="Enter Verification Code"/>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Verify to Sign In"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnVerifySignin" />
+</LinearLayout>
